@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.integer "num_of_employees"
     t.boolean "still_in_business"
     t.datetime "opening_time"
-    t.datetime "end_time"
+    t.datetime "closing_time"
   end
 
   create_table "costumes", force: :cascade do |t|
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 3) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "haunted_houes", force: :cascade do |t|
+  create_table "haunted_houses", force: :cascade do |t|
     t.string "name"
     t.string "location"
     t.string "theme"
